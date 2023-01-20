@@ -1,0 +1,68 @@
+body{
+    background-color: #483D8B;
+    width: 100vw;
+    height: 100vh;
+}
+
+.mainSection{
+    background-color: #FFE4C4;
+    width: 40%;
+    height: auto;
+    text-align: center;
+    transform: translate(80%,20%);
+    border-radius: 30px;
+}
+
+.primaryHeading{
+    margin-left: 8rem;
+}
+
+.gameImg{
+    width: 150px;
+    height: 150px;
+    margin-left: 13.5rem;
+}
+
+.button-wrapper p{
+    font-size:1.3rem;
+}
+
+.welcomeSection button,
+.gameSection button{
+    background-image: linear-gradient(to right,#2d2d76,#615b88); 
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    padding: 15px;
+    border-radius: 10px;
+    border: 0;
+    width:40%;
+}
+
+.welcomeSection button:hover,
+.gameSection button:hover{
+    box-shadow: 5px 5px 20px #2d2d76;
+}
+
+.gameDetails span{
+   margin-left: 12rem;
+}
+
+.inputBox{
+    width: 45%;
+    padding: 5px;
+    outline: none;
+    text-align: center;
+    border: 1px solid lightskyblue;
+    box-shadow: 5px 5px 10px lightskyblue;
+}
+
+.inputBox:focus::placeholder{
+    color: transparent;
+}
+
+.inputBox::placeholder{
+    padding: 10px;
+    color: darkorange;
+    text-align: center;
+}

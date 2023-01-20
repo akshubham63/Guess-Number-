@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess The Number</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body onload="init(this)">
+    <main class="mainSection">
+        <section class="welcomeSection" id="welcomeSection">
+            <div class="container">
+                <div class="row">
+                    <h4 class="primaryHeading text-capitalize mt-4">
+                        guess the number between 1-100
+                    </h4>
+                    <div class="col-md-12">
+                        <div class="welcomePage">
+                            <div class="gameImg my-3">
+                                <img src="./assets/images/logo.png" alt="logo image" class="img-fluid ">
+                            </div>
+                            <div class="button-wrapper">
+                                <p class="textInfo text-capitalize">
+                                    guess the number for 10 attemps
+                                </p>
+                                <button type="button" id="onEasyBtn" class="mb-4">10 attemps</button>
+                                <p class="textInfo text-capitalize mb-4">guess the number for 5 attemps</p>
+                                <button type="button" id="onHardBtn" class="mb-5">5 attemps</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="gameSection p-2" id="gameSection">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <button type="button" class="my-3" id="newGame">new game</button>
+                        <h2 class="my-2" id="textOutput">Your Guess</h2>
+                        <input type="number" placeholder="Enter your number" class="my-2 inputBox" id="inputBox" min="0" max="100" maxlength="3" onchange="inputHandler(this)">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="gameDetails my-4">
+                        <div class="col-md-12">
+                            <p class="textInfo d-inline-block ml-2">Number of previous attemps</p>
+                            <span id="attemps">0</span>
+                        </div>
+                        <div class="col-md-12">
+                            <p class="textInfo d-inline-block ml-2">Number of previous guesses</p>
+                            <span id="previousGess">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="./assets/js/app.js"></script>
+</body>
+</html>
